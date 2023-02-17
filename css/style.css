@@ -1,0 +1,481 @@
+/* !======== */
+@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
+/* !======== */
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279;
+}
+h1 {
+  font-size: 65px;
+  color: #2d3033;
+}
+h2 {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.639);
+}
+h3 {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400;
+}
+/* ------------------------------------------------------------------------------
+	 General Style
+-------------------------------------------------------------------------------*/
+a {
+  color: rgba(255, 255, 255, 0.61);
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: color, 0.3s;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #6c7279;
+}
+.div {
+  background-image: url(../images/1637687925_28-hdpic-club-p-toioti-na-avu-35\ 2.jpg);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+.section {
+  padding: 100px 0;
+}
+/* .no-padding {
+  padding: 0;
+}
+.no-gutter [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0; */
+}
+/* !==================================== START HEADER ====================================== */
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(to top left, rgba(255, 0, 0, 0.419), purple);
+}
+#header .header-content {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 40px 0;
+  width: 100%;
+  transition: padding 0.3s;
+}
+#header .logo {
+  font-size: 27px;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 300;
+  float: left;
+  text-transform: uppercase;
+}
+#header.fixed {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+#header.fixed .header-content {
+  border-bottom: 0;
+  padding: 25px 0;
+}
+#header.fixed .nav-toggle {
+  top: 18px;
+}
+.navigation.open {
+  opacity: 0.9;
+  visibility: visible;
+  transition: 0.5s;
+}
+.navigation {
+  float: right;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  color: rgba(255, 255, 255, 0.653);
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 40px;
+}
+.navigation a:hover,
+.navigation a.active {
+  color: #262626;
+}
+.nav-toggle {
+  display: none;
+  height: 44px;
+  overflow: hidden;
+  position: fixed;
+  right: 5%;
+  text-indent: 100%;
+  top: 32px;
+  white-space: nowrap;
+  width: 44px;
+  z-index: 99999;
+  transition: all 0.3s;
+}
+.nav-toggle:before,
+.nav-toggle:after {
+  border-radius: 50%;
+  /* content: ""; */
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.nav-toggle:before {
+  background-color: #e84545;
+  transform: scale(1);
+  transition-duration: 0.3s;
+}
+.nav-toggle:after {
+  background-color: #e84545;
+  transform: scale(0);
+  transition-duration: 0s;
+}
+.nav-toggle span {
+  background-color: #fff;
+  bottom: auto;
+  display: inline-block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  right: auto;
+  top: 50%;
+  width: 18px;
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%);
+}
+.nav-toggle span:before,
+.nav-toggle span:after {
+  background-color: #fff;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: 0.3s;
+}
+.nav-toggle span:before {
+  transform: translateY(-6px) rotate(0deg);
+}
+.nav-toggle span:after {
+  transform: translateY(6px) rotate(0deg);
+}
+.nav-toggle.close-nav:before {
+  transform: scale(0);
+}
+.nav-toggle.close-nav:after {
+  transform: scale(1);
+}
+.nav-toggle.close-nav span {
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav-toggle.close-nav span:before,
+.nav-toggle.close-nav span:after {
+  background-color: #fff;
+}
+.nav-toggle.close-nav span:before {
+  transform: translateY(0) rotate(45deg);
+}
+.nav-toggle.close-nav span:after {
+  transform: translateY(0) rotate(-45deg);
+}
+/*  !==================================== FINISH HEADER ====================================== */
+/*  ?==================================== START MAIN ======================================  */
+.banner {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+}
+.banner-inner-wrapper {
+  float: right;
+}
+.banner-text {
+  padding-top: 45%;
+  margin-right: 60px;
+}
+.banner-text h1 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+.banner-text p {
+  color: rgba(255, 255, 255, 0.636);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1%;
+}
+.row h1,
+p {
+  color: rgba(255, 255, 255, 0.619);
+}
+.intro-content h4,
+p {
+  color: rgba(255, 255, 255, 0.63);
+}
+
+/*  ?==================================== FINISH MAIN ======================================  */
+/* TODO==================================== START FOOTER ====================================== */
+.footer {
+  width: 94%;
+  margin: auto;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 7%;
+}
+.footer h4 {
+  font-size: 14px;
+  color: #6c7279;
+  letter-spacing: 2px;
+  margin: 0 0 15px 0;
+  padding: 0px;
+}
+.footer p {
+  font-size: 12px;
+  color: #6c7279;
+}
+.footer a {
+  color: #6c7279;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .footer-share {
+  margin-top: 0;
+}
+.footer .footer-share li {
+  display: inline-block;
+  float: none;
+}
+.footer .footer-share a {
+  border: none;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 15px;
+}
+.footer .fa-heart {
+  color: #e84545;
+  font-size: 12px;
+  margin: 0 2px;
+}
+/* TODO==================================== FINISH FOOTER ====================================== */
+/* ?media запросы */
+@media screen and (max-width: 1024px) {
+  .banner {
+    min-height: 450px;
+  }
+  #header .header-content {
+    width: 90%;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .navigation {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .navigation .primary-nav {
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
+  }
+  .navigation li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .navigation a {
+    display: block;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .flex-control-nav {
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-text {
+    padding-top: 30%;
+  }
+  .banner-text h1 {
+    font-size: 24px;
+  }
+  .banner-text p {
+    font-size: 15px;
+  }
+ 
+  .flex-control-nav {
+    width: 100%;
+  }
+  .footer .footer-col {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner {
+    height: 30px !important;
+  }
+  .banner-text {
+    padding-top: 55%;
+    text-align: center;
+    margin-left:40px ;
+  }
+  .banner-text h1 {
+    font-size: 21px;
+  }
+  .banner-text p {
+    font-size: 13px;
+  }
+
+
+}
+/* !karusel */
+body {
+  background-color: #100e17;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container2 {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  top: 50px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+/*  */
